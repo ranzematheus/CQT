@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title> Análise de Imagem </title>
+
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script src="js/utils.js"></script>
+			
+		<script src="js/jquery-1.7.js"></script>
+		<script src="js/libs/lib/OpenLayers.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script type="text/javascript" src="js/config.js"></script>
+	</head>
+  
+  <body onload="init()">
+   
+	<div id="navBar">
+			 <div id="slicer"></div>	  
+			<a class="zoom" href="javascript: void map.zoomToMaxExtent();if (panZoomBar) { panZoomBar.redraw();}" >
+				<div id="resetZoom"></div>
+			</a>
+			<a id="hideMarker" class="zoom" href="#" >
+				<div id="hideMarkers"></div>    
+			</a>
+			<a id="showBox" class="zoom" href="#" >
+				<div id="aboutBox"></div>
+			</a>
+			
+			<a class="zoom" href="javascript: void map.zoomIn();" >
+				<div id="maisZoom"></div>
+			</a>
+			
+			<a class="zoom" href="javascript: void map.zoomOut();" >
+				<div id="menosZoom"></div>
+			</a> 
+			<a id="showBox" class="zoom" >
+				<div id="abrirSobre"></div>
+			</a>   			
+		</div>   
+    <div id="map" class="smallmap"> 
+		  
+		<div id="box"> 
+			<div id="tituloAbout"></div>	
+			<div id="line"></div>
+			<div id="close"></div>
+			<div id="rodape"></div>
+			<div id="marcaPositivo"><b>POSITIVO INFORMÁTICA</b></div>	
+			<div id="contetAbout" class="jump_menu_content"></div>
+		</div>
+		
+		<div  id="contentBox">
+			<div id="tituloGlyph"></div>	
+			<div id="closeBoxDescreption"></div>
+			<div id="line"></div>
+			<div id="contetGlyph" ></div>	
+			<div style="clear:both"></div>
+			<!--<div id="barFont">
+				<div id="aumentaFonte"></div>
+				<div id="diminuiFonte"></div>
+			</div>-->
+		</div>
+		
+		<div id="caixaSobre">
+			<div id="tituloSobre"></div>
+			<div id="linhaSobre"></div>
+			<div id="fecharSobre"></div>		
+			<div id="linhaSobre"></div>
+			<div id="conteudoSobre" class="jump_menu_content"></div>
+			<div style="clear:both"></div>
+		<!--	<div id="barFont">
+				<div id="aumentaFonte2"></div>
+				<div id="diminuiFonte2"></div>
+		</div>-->
+		</div>
+		</div>
+	</div> 
+	
+  </body>
+</html>
